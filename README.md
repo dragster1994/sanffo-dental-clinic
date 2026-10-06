@@ -18,9 +18,11 @@ A premium, modern, highly professional, and fully responsive website for **SANFF
 
 ## ✨ Features & Architecture
 
-1. **Brand Identity & Aesthetic**
-   * Medical-grade color palette: Off-white background, deep navy, subtle teal/aqua accents, and muted gold badges.
-   * Generous white space, clear typography (Google Fonts: *Plus Jakarta Sans* & *Outfit*), soft rounded cards, and zero cartoonish graphics.
+1. **Brand Identity & Refined Medical Theme**
+   * **Headers, Primary Texts, High Authority Accents**: Deep Navy (`#0B2545` / `#071930`) providing authoritative clinical confidence.
+   * **Primary Buttons, Highlighted Services, Active Tabs**: Vibrant Teal Cyan (`#0891B2` / `#06B6D4`) providing eye-catching interactive conversion focal points.
+   * **Backgrounds, Hero Sections, Cards Container**: Refreshing Soft Mint Ice (`#F0FAF7` / `#E6F6F1` / `#E8F7F3`) delivering a soothing, sterile, modern dental atmosphere.
+   * **Body Paragraphs & Subtext**: Crisp Slate Grey (`#334155` / `#475569` / `#64748B`) ensuring readable typography with zero eye fatigue.
 
 2. **Complete Section Flow (Per Exact Specifications)**
    * **Sticky Header & Blur Navigation**: Responsive desktop menu, mobile drawer, quick "Book Appointment" CTA.

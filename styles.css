@@ -1,49 +1,68 @@
 /* ==========================================================================
-   SANFFO DENTAL CLINIC - PREMIUM STYLESHEET
+   SANFFO DENTAL CLINIC - BESPOKE MEDICAL STYLESHEET
    Dr. Syed Fahad Ali Shah (BDS, RDS, MPhil, CHPE)
    Khajoor Stop, Pabbi, Nowshera, Pakistan
+
+   THEME SPECIFICATIONS:
+   - Headers, Primary Texts, High Authority Accents: Deep Navy (#0B2545 / #071930)
+   - Primary Buttons, Highlighted Services, Active Tabs: Teal Cyan (#0891B2 / #06B6D4)
+   - Backgrounds, Hero Sections, Cards Container: Soft Mint Ice (#F0FAF7 / #E6F6F1 / #E8F7F3)
+   - Body Paragraphs & Subtext: Slate Grey (#334155 / #475569 / #64748B)
    ========================================================================== */
 
 :root {
-  /* Color Palette - Sophisticated Medical Aesthetics */
-  --color-bg: #FFFFFF;
-  --color-bg-alt: #F8FAFC;
-  --color-bg-subtle: #F1F5F9;
-  --color-primary-navy: #0B1E36;
-  --color-primary-deep: #071324;
-  --color-secondary-navy: #15325B;
-  --color-navy-card: #0F2342;
-  
-  /* Teal / Aqua Accents */
-  --color-teal: #0D9488;
-  --color-teal-light: #14B8A6;
-  --color-teal-dark: #0F766E;
-  --color-teal-soft: #F0FDFA;
-  --color-teal-glow: rgba(13, 148, 136, 0.15);
+  /* ==========================================================================
+     1. Soft Mint Ice (Backgrounds, Hero Sections, Cards Containers)
+     ========================================================================== */
+  --color-bg: #F0FAF7;               /* Global canvas: Crisp Soft Mint Ice */
+  --color-bg-alt: #E6F6F1;           /* Alternating sections: Soft Mint Ice */
+  --color-bg-subtle: #DEF3EC;        /* Containers & frames: Fresh Soft Mint Ice */
+  --color-mint-ice: #E8F7F3;         /* Hero & container wash */
+  --color-mint-light: #F4FCF9;       /* Lightest mint tone */
+  --color-mint-card: #FFFFFF;        /* Pristine card surface on mint container */
+  --color-mint-border: #D1EFE7;      /* Clean soft mint-cyan border */
+  --color-mint-border-subtle: #E2F5EF;
 
-  /* Subtle Warm Gold (For premium credentials & accents) */
-  --color-gold: #C5A059;
-  --color-gold-light: #DFBA73;
-  --color-gold-soft: #FCF8F2;
-  --color-gold-border: rgba(197, 160, 89, 0.25);
+  /* ==========================================================================
+     2. Deep Navy (Headers, Primary Texts, High Authority Accents)
+     ========================================================================== */
+  --color-primary-navy: #0B2545;     /* Main deep navy for headings & titles */
+  --color-navy-dark: #071930;        /* Deepest authority navy */
+  --color-navy-medium: #133863;      /* Secondary navy text */
+  --color-navy-card: #0A2240;        /* Authority card surface */
+  --color-navy-badge: #0B2545;       /* High authority badge background */
+  --color-navy-border: rgba(11, 37, 69, 0.2);
 
-  /* Typography / Text Colors */
-  --color-text-main: #1E293B;
-  --color-text-muted: #64748B;
-  --color-text-light: #94A3B8;
-  --color-text-inverse: #FFFFFF;
+  /* ==========================================================================
+     3. Teal Cyan (Primary Buttons, Highlighted Services, Active Tabs)
+     ========================================================================== */
+  --color-teal-cyan: #0891B2;        /* Core vibrant Teal Cyan */
+  --color-teal-cyan-light: #06B6D4;  /* Luminous Cyan highlight */
+  --color-teal-cyan-dark: #0E7490;   /* Deep hover Teal Cyan */
+  --color-teal-cyan-soft: #D6F5EE;   /* Soft Teal-Mint wash */
+  --color-teal-cyan-glow: rgba(8, 145, 178, 0.22);
+
+  /* ==========================================================================
+     4. Slate Grey (Body Paragraphs & Subtexts)
+     ========================================================================== */
+  --color-text-main: #334155;        /* Slate-700: Main body paragraphs */
+  --color-text-body: #475569;        /* Slate-600: Paragraph copy */
+  --color-text-muted: #64748B;       /* Slate-500: Subtext, subtitles, descriptions */
+  --color-text-light: #94A3B8;       /* Slate-400: Metadata, captions, secondary info */
+  --color-text-inverse: #FFFFFF;     /* White on dark navy/teal cyan */
 
   /* Borders & Dividers */
-  --color-border: #E2E8F0;
-  --color-border-subtle: #F1F5F9;
+  --color-border: #D1EFE7;
+  --color-border-subtle: #E2F5EF;
+  --color-border-cyan: rgba(8, 145, 178, 0.4);
 
   /* Elevation Shadows */
-  --shadow-sm: 0 1px 3px rgba(11, 30, 54, 0.05);
-  --shadow-md: 0 4px 14px rgba(11, 30, 54, 0.07);
-  --shadow-lg: 0 12px 32px rgba(11, 30, 54, 0.09);
-  --shadow-xl: 0 20px 48px rgba(11, 30, 54, 0.12);
-  --shadow-teal: 0 8px 24px rgba(13, 148, 136, 0.22);
-  --shadow-navy: 0 12px 30px rgba(11, 30, 54, 0.25);
+  --shadow-sm: 0 2px 6px rgba(11, 37, 69, 0.04);
+  --shadow-md: 0 6px 18px rgba(11, 37, 69, 0.06);
+  --shadow-lg: 0 12px 32px rgba(11, 37, 69, 0.08);
+  --shadow-xl: 0 20px 48px rgba(11, 37, 69, 0.11);
+  --shadow-cyan: 0 8px 24px rgba(8, 145, 178, 0.28);
+  --shadow-navy: 0 12px 30px rgba(11, 37, 69, 0.22);
 
   /* Border Radii */
   --radius-xs: 6px;
@@ -54,7 +73,7 @@
   --radius-full: 9999px;
 
   /* Font Families */
-  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --font-heading: 'Outfit', 'Plus Jakarta Sans', sans-serif;
 
   /* Transitions */
@@ -62,7 +81,7 @@
   --transition-normal: 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   --transition-slow: 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 
-  /* Containers */
+  /* Layout */
   --container-max: 1240px;
   --header-height: 80px;
 }
@@ -84,7 +103,7 @@ html {
 
 body {
   font-family: var(--font-sans);
-  background-color: var(--color-bg);
+  background-color: var(--color-bg); /* Soft Mint Ice canvas */
   color: var(--color-text-main);
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
@@ -118,8 +137,8 @@ ul, ol {
   position: absolute;
   top: -100px;
   left: 20px;
-  background: var(--color-teal);
-  color: white;
+  background: var(--color-teal-cyan);
+  color: #FFFFFF;
   padding: 12px 20px;
   border-radius: var(--radius-sm);
   z-index: 99999;
@@ -135,14 +154,16 @@ ul, ol {
    ========================================================================== */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
-  color: var(--color-primary-navy);
+  color: var(--color-primary-navy); /* Headers are Deep Navy */
   line-height: 1.25;
   font-weight: 700;
   letter-spacing: -0.02em;
 }
 
+/* Body paragraphs and subtext are Slate Grey */
 p {
-  color: var(--color-text-muted);
+  color: var(--color-text-body);
+  font-size: 1rem;
 }
 
 .container {
@@ -154,17 +175,19 @@ p {
   padding-right: 24px;
 }
 
+/* Section Backgrounds are Soft Mint Ice */
 .section {
   padding: 96px 0;
   position: relative;
+  background-color: var(--color-bg);
 }
 
 .section--alt {
-  background-color: var(--color-bg-alt);
+  background-color: var(--color-bg-alt); /* Soft Mint Ice Layer */
 }
 
 .section--dark {
-  background-color: var(--color-primary-deep);
+  background-color: var(--color-navy-dark);
   color: #F8FAFC;
 }
 
@@ -190,6 +213,7 @@ p {
   margin-left: 0;
 }
 
+/* High Authority Accents: Deep Navy Badges */
 .section-tag {
   display: inline-flex;
   align-items: center;
@@ -198,32 +222,35 @@ p {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: var(--color-teal);
-  background-color: var(--color-teal-soft);
-  padding: 6px 14px;
+  color: #FFFFFF;
+  background-color: var(--color-primary-navy); /* High authority Deep Navy */
+  padding: 6px 16px;
   border-radius: var(--radius-full);
   margin-bottom: 16px;
-  border: 1px solid rgba(13, 148, 136, 0.15);
+  border: 1px solid rgba(8, 145, 178, 0.35); /* Subtle Teal Cyan authority rim */
+  box-shadow: 0 2px 8px rgba(11, 37, 69, 0.12);
 }
 
 .section-tag--gold {
-  color: #936B1B;
-  background-color: var(--color-gold-soft);
-  border-color: var(--color-gold-border);
+  background-color: var(--color-primary-navy);
+  color: #F8FAFC;
+  border-color: rgba(6, 182, 212, 0.4);
 }
 
 .section-tag--white {
-  color: var(--color-teal-light);
-  background-color: rgba(255, 255, 255, 0.1);
-  border-color: rgba(255, 255, 255, 0.15);
+  color: var(--color-teal-cyan-light);
+  background-color: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.2);
 }
 
 .section-title {
   font-size: clamp(2rem, 3.2vw, 2.75rem);
-  font-weight: 700;
+  font-weight: 800;
+  color: var(--color-primary-navy); /* Deep Navy */
   margin-bottom: 16px;
 }
 
+/* Subtext is Slate Grey */
 .section-subtitle {
   font-size: 1.0625rem;
   color: var(--color-text-muted);
@@ -231,7 +258,7 @@ p {
 }
 
 /* ==========================================================================
-   Buttons & CTAs
+   Buttons & CTAs (Primary Buttons are Teal Cyan)
    ========================================================================== */
 .btn {
   display: inline-flex;
@@ -250,27 +277,28 @@ p {
   user-select: none;
 }
 
+/* Primary Buttons: Teal Cyan */
 .btn-primary {
-  background-color: var(--color-teal);
+  background: linear-gradient(135deg, var(--color-teal-cyan) 0%, var(--color-teal-cyan-light) 100%);
   color: #FFFFFF;
-  box-shadow: 0 4px 14px rgba(13, 148, 136, 0.28);
+  box-shadow: 0 4px 16px rgba(8, 145, 178, 0.32);
 }
 .btn-primary:hover {
-  background-color: var(--color-teal-dark);
-  box-shadow: var(--shadow-teal);
+  background: linear-gradient(135deg, var(--color-teal-cyan-dark) 0%, var(--color-teal-cyan) 100%);
+  box-shadow: var(--shadow-cyan);
   transform: translateY(-2px);
   color: #FFFFFF;
 }
 
 .btn-secondary {
   background-color: #FFFFFF;
-  color: var(--color-primary-navy);
+  color: var(--color-primary-navy); /* Deep Navy text */
   border-color: var(--color-border);
   box-shadow: var(--shadow-sm);
 }
 .btn-secondary:hover {
-  border-color: var(--color-teal);
-  color: var(--color-teal);
+  border-color: var(--color-teal-cyan);
+  color: var(--color-teal-cyan);
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
 }
@@ -288,25 +316,25 @@ p {
 }
 
 .btn-call {
-  background-color: var(--color-primary-navy);
+  background-color: var(--color-primary-navy); /* Deep Navy */
   color: #FFFFFF;
-  box-shadow: 0 4px 14px rgba(11, 30, 54, 0.25);
+  box-shadow: 0 4px 14px rgba(11, 37, 69, 0.25);
 }
 .btn-call:hover {
-  background-color: var(--color-secondary-navy);
+  background-color: var(--color-navy-dark);
   transform: translateY(-2px);
   box-shadow: var(--shadow-navy);
   color: #FFFFFF;
 }
 
 .btn-gold {
-  background: linear-gradient(135deg, #C5A059 0%, #B89246 100%);
+  background: linear-gradient(135deg, var(--color-teal-cyan) 0%, var(--color-teal-cyan-light) 100%);
   color: #FFFFFF;
-  box-shadow: 0 4px 14px rgba(197, 160, 89, 0.3);
+  box-shadow: 0 4px 16px rgba(8, 145, 178, 0.32);
 }
 .btn-gold:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(197, 160, 89, 0.4);
+  box-shadow: var(--shadow-cyan);
   color: #FFFFFF;
 }
 
@@ -315,7 +343,7 @@ p {
   color: var(--color-primary-navy);
 }
 .btn-white:hover {
-  background-color: #F8FAFC;
+  background-color: var(--color-mint-light);
   transform: translateY(-2px);
   box-shadow: var(--shadow-lg);
 }
@@ -339,19 +367,19 @@ p {
   left: 0;
   width: 100%;
   height: var(--header-height);
-  background-color: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background-color: rgba(235, 248, 244, 0.94); /* Soft Mint Ice Glass */
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
   z-index: 1000;
   transition: all var(--transition-normal);
-  border-bottom: 1px solid rgba(226, 232, 240, 0.7);
+  border-bottom: 1px solid var(--color-border);
 }
 
 .header.scrolled {
   height: 72px;
-  background-color: rgba(255, 255, 255, 0.98);
-  box-shadow: 0 4px 20px rgba(11, 30, 54, 0.08);
-  border-bottom-color: var(--color-border);
+  background-color: rgba(240, 250, 247, 0.98);
+  box-shadow: 0 4px 20px rgba(11, 37, 69, 0.06);
+  border-bottom-color: #C3E9DF;
 }
 
 .header-container {
@@ -372,12 +400,12 @@ p {
   width: 44px;
   height: 44px;
   border-radius: 12px;
-  background: linear-gradient(135deg, var(--color-primary-navy) 0%, var(--color-teal) 100%);
+  background: linear-gradient(135deg, var(--color-primary-navy) 0%, var(--color-teal-cyan) 100%);
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
-  box-shadow: 0 4px 12px rgba(13, 148, 136, 0.25);
+  box-shadow: 0 4px 12px rgba(8, 145, 178, 0.28);
   flex-shrink: 0;
 }
 
@@ -386,25 +414,27 @@ p {
   flex-direction: column;
 }
 
+/* Primary Texts: Deep Navy */
 .logo-title {
   font-family: var(--font-heading);
   font-size: 1.25rem;
   font-weight: 800;
   letter-spacing: -0.01em;
-  color: var(--color-primary-navy);
+  color: var(--color-primary-navy); /* Deep Navy */
   line-height: 1.15;
 }
 
 .logo-title span {
-  color: var(--color-teal);
+  color: var(--color-teal-cyan); /* Teal Cyan Accent */
 }
 
+/* High Authority Accent */
 .logo-tagline {
   font-size: 0.6875rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   font-weight: 700;
-  color: var(--color-gold);
+  color: var(--color-primary-navy);
 }
 
 /* Nav Menu */
@@ -417,7 +447,7 @@ p {
 .nav-link {
   font-size: 0.9375rem;
   font-weight: 600;
-  color: var(--color-text-main);
+  color: var(--color-primary-navy); /* Primary texts: Deep Navy */
   position: relative;
   padding: 6px 0;
 }
@@ -429,14 +459,15 @@ p {
   left: 0;
   width: 0;
   height: 2px;
-  background-color: var(--color-teal);
+  background-color: var(--color-teal-cyan); /* Teal Cyan Active underline */
   transition: width var(--transition-fast);
   border-radius: 2px;
 }
 
+/* Active Tabs / Links are Teal Cyan */
 .nav-link:hover,
 .nav-link.active {
-  color: var(--color-teal);
+  color: var(--color-teal-cyan);
 }
 
 .nav-link:hover::after,
@@ -497,7 +528,7 @@ p {
   left: 0;
   width: 100%;
   height: calc(100vh - var(--header-height));
-  background-color: #FFFFFF;
+  background-color: var(--color-bg); /* Soft Mint Ice */
   z-index: 999;
   padding: 32px 24px;
   display: flex;
@@ -524,12 +555,12 @@ p {
   font-weight: 700;
   color: var(--color-primary-navy);
   padding: 8px 0;
-  border-bottom: 1px solid var(--color-border-subtle);
+  border-bottom: 1px solid var(--color-border);
 }
 
 .mobile-nav-link:hover,
 .mobile-nav-link.active {
-  color: var(--color-teal);
+  color: var(--color-teal-cyan);
 }
 
 .mobile-nav-footer {
@@ -541,14 +572,15 @@ p {
 }
 
 /* ==========================================================================
-   Hero Section
+   Hero Section (Hero Section is Soft Mint Ice)
    ========================================================================== */
 .hero {
   position: relative;
-  padding: 60px 0 100px 0;
-  background: radial-gradient(circle at 85% 20%, rgba(13, 148, 136, 0.08) 0%, rgba(255, 255, 255, 0) 50%),
-              radial-gradient(circle at 10% 80%, rgba(11, 30, 54, 0.03) 0%, rgba(255, 255, 255, 0) 40%),
-              var(--color-bg);
+  padding: 64px 0 108px 0;
+  /* Luminous Soft Mint Ice Wash */
+  background: radial-gradient(circle at 85% 18%, rgba(6, 182, 212, 0.16) 0%, rgba(240, 250, 247, 0) 55%),
+              radial-gradient(circle at 12% 80%, rgba(11, 37, 69, 0.05) 0%, rgba(240, 250, 247, 0) 45%),
+              var(--color-mint-ice);
   overflow: hidden;
 }
 
@@ -564,55 +596,59 @@ p {
   z-index: 2;
 }
 
+/* High Authority Accent: Deep Navy Badge */
 .hero-badge {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  background-color: var(--color-teal-soft);
-  color: var(--color-teal-dark);
-  padding: 8px 18px;
+  background-color: var(--color-primary-navy); /* Deep Navy Authority */
+  color: #FFFFFF;
+  padding: 8px 20px;
   border-radius: var(--radius-full);
   font-size: 0.8125rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   margin-bottom: 24px;
-  border: 1px solid rgba(13, 148, 136, 0.2);
+  border: 1px solid rgba(6, 182, 212, 0.35);
+  box-shadow: 0 4px 14px rgba(11, 37, 69, 0.15);
 }
 
 .hero-badge-pulse {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background-color: var(--color-teal);
-  box-shadow: 0 0 0 0 rgba(13, 148, 136, 0.7);
-  animation: pulseTeal 2s infinite;
+  background-color: var(--color-teal-cyan-light); /* Luminous Cyan Pulse */
+  box-shadow: 0 0 0 0 rgba(6, 182, 212, 0.7);
+  animation: pulseCyan 2s infinite;
 }
 
-@keyframes pulseTeal {
-  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(13, 148, 136, 0.7); }
-  70% { transform: scale(1); box-shadow: 0 0 0 10px rgba(13, 148, 136, 0); }
-  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(13, 148, 136, 0); }
+@keyframes pulseCyan {
+  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(6, 182, 212, 0.7); }
+  70% { transform: scale(1); box-shadow: 0 0 0 10px rgba(6, 182, 212, 0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(6, 182, 212, 0); }
 }
 
+/* Headers are Deep Navy */
 .hero-title {
   font-size: clamp(2.5rem, 4.2vw, 3.8rem);
   font-weight: 800;
-  color: var(--color-primary-navy);
+  color: var(--color-primary-navy); /* Deep Navy */
   line-height: 1.15;
   margin-bottom: 24px;
 }
 
 .hero-title .highlight {
-  color: var(--color-teal);
+  color: var(--color-teal-cyan); /* Teal Cyan Accent */
   position: relative;
   display: inline-block;
 }
 
+/* Body paragraph is Slate Grey */
 .hero-description {
   font-size: 1.1875rem;
   line-height: 1.7;
-  color: var(--color-text-muted);
+  color: var(--color-text-body); /* Slate Grey */
   margin-bottom: 36px;
   max-width: 580px;
 }
@@ -630,13 +666,13 @@ p {
   gap: 12px;
   font-size: 0.875rem;
   font-weight: 600;
-  color: var(--color-text-muted);
+  color: var(--color-text-muted); /* Slate Grey */
   border-top: 1px solid var(--color-border);
   padding-top: 24px;
 }
 
 .hero-trust-statement svg {
-  color: var(--color-teal);
+  color: var(--color-teal-cyan); /* Teal Cyan */
   flex-shrink: 0;
 }
 
@@ -650,7 +686,7 @@ p {
   border-radius: var(--radius-xl);
   overflow: hidden;
   box-shadow: var(--shadow-xl);
-  border: 1px solid rgba(226, 232, 240, 0.8);
+  border: 1px solid var(--color-border);
   background: white;
 }
 
@@ -666,12 +702,12 @@ p {
   position: absolute;
   bottom: -24px;
   left: -28px;
-  background: rgba(255, 255, 255, 0.96);
+  background: rgba(255, 255, 255, 0.98);
   backdrop-filter: blur(16px);
   padding: 18px 24px;
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-xl);
-  border: 1px solid rgba(255, 255, 255, 0.8);
+  border: 1px solid var(--color-border);
   display: flex;
   align-items: center;
   gap: 16px;
@@ -688,11 +724,11 @@ p {
   width: 48px;
   height: 48px;
   border-radius: var(--radius-md);
-  background: linear-gradient(135deg, var(--color-teal-soft) 0%, #D1FAE5 100%);
+  background: var(--color-teal-cyan-soft);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--color-teal-dark);
+  color: var(--color-teal-cyan);
 }
 
 .floating-card-text {
@@ -705,26 +741,27 @@ p {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--color-teal);
+  color: var(--color-teal-cyan);
 }
 
 .floating-card-title {
   font-family: var(--font-heading);
   font-size: 1.0625rem;
   font-weight: 700;
-  color: var(--color-primary-navy);
+  color: var(--color-primary-navy); /* Deep Navy */
 }
 
+/* High Authority Accent: Doctor Badge */
 .hero-doctor-badge {
   position: absolute;
   top: 24px;
   right: -20px;
-  background: var(--color-primary-navy);
+  background: var(--color-primary-navy); /* High Authority Deep Navy */
   color: white;
-  padding: 12px 20px;
+  padding: 12px 22px;
   border-radius: var(--radius-md);
-  box-shadow: var(--shadow-lg);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: var(--shadow-navy);
+  border: 1px solid rgba(6, 182, 212, 0.35);
   display: flex;
   flex-direction: column;
 }
@@ -732,20 +769,21 @@ p {
 .hero-doctor-name {
   font-size: 0.875rem;
   font-weight: 700;
+  color: #FFFFFF;
 }
 
 .hero-doctor-creds {
-  font-size: 0.6875rem;
-  color: var(--color-gold-light);
-  font-weight: 600;
+  font-size: 0.75rem;
+  color: var(--color-teal-cyan-light); /* Luminous Cyan */
+  font-weight: 700;
   letter-spacing: 0.05em;
 }
 
 /* ==========================================================================
-   Quick Trust Bar
+   Quick Trust Bar (Cards Container is Soft Mint Ice)
    ========================================================================== */
 .trust-bar {
-  background-color: #FFFFFF;
+  background-color: var(--color-bg-alt); /* Soft Mint Ice */
   border-top: 1px solid var(--color-border);
   border-bottom: 1px solid var(--color-border);
   padding: 32px 0;
@@ -771,8 +809,8 @@ p {
   width: 50px;
   height: 50px;
   border-radius: var(--radius-md);
-  background-color: var(--color-teal-soft);
-  color: var(--color-teal);
+  background-color: var(--color-teal-cyan-soft);
+  color: var(--color-teal-cyan);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -781,7 +819,7 @@ p {
 }
 
 .trust-item:hover .trust-icon-wrapper {
-  background-color: var(--color-teal);
+  background-color: var(--color-teal-cyan);
   color: #FFFFFF;
   transform: scale(1.05);
 }
@@ -790,13 +828,13 @@ p {
   font-family: var(--font-heading);
   font-size: 1rem;
   font-weight: 700;
-  color: var(--color-primary-navy);
+  color: var(--color-primary-navy); /* Deep Navy */
   line-height: 1.3;
 }
 
 .trust-item-desc {
   font-size: 0.8125rem;
-  color: var(--color-text-muted);
+  color: var(--color-text-muted); /* Slate Grey */
 }
 
 /* ==========================================================================
@@ -827,21 +865,22 @@ p {
   object-fit: cover;
 }
 
+/* High Authority Accent: Experience Card */
 .about-experience-card {
   position: absolute;
   bottom: -20px;
   right: -20px;
-  background-color: var(--color-primary-navy);
+  background-color: var(--color-primary-navy); /* High Authority Deep Navy */
   color: white;
   padding: 24px 28px;
   border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-xl);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: var(--shadow-navy);
+  border: 1px solid rgba(6, 182, 212, 0.3);
   max-width: 240px;
 }
 
 .about-experience-card h4 {
-  color: var(--color-gold-light);
+  color: var(--color-teal-cyan-light);
   font-size: 0.8125rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -849,7 +888,7 @@ p {
 }
 
 .about-experience-card p {
-  color: #E2E8F0;
+  color: #F1F5F9;
   font-size: 0.875rem;
   line-height: 1.4;
 }
@@ -860,7 +899,7 @@ p {
 
 .about-lead {
   font-size: 1.125rem;
-  color: var(--color-primary-navy);
+  color: var(--color-primary-navy); /* Deep Navy Primary Text */
   font-weight: 600;
   line-height: 1.6;
   margin-bottom: 16px;
@@ -868,7 +907,7 @@ p {
 
 .about-text {
   font-size: 1rem;
-  color: var(--color-text-muted);
+  color: var(--color-text-body); /* Slate Grey */
   margin-bottom: 28px;
 }
 
@@ -885,16 +924,16 @@ p {
   gap: 10px;
   font-size: 0.9375rem;
   font-weight: 600;
-  color: var(--color-primary-navy);
+  color: var(--color-primary-navy); /* Deep Navy */
 }
 
 .checklist-item svg {
-  color: var(--color-teal);
+  color: var(--color-teal-cyan); /* Teal Cyan checkmark */
   flex-shrink: 0;
 }
 
 /* ==========================================================================
-   Why Choose SANFFO DENTAL CLINIC
+   Why Choose SANFFO DENTAL CLINIC (Cards Container is Soft Mint Ice)
    ========================================================================== */
 .why-grid {
   display: grid;
@@ -903,10 +942,10 @@ p {
 }
 
 .why-card {
-  background: #FFFFFF;
+  background: var(--color-mint-card); /* Pristine Card Face */
   border-radius: var(--radius-lg);
   padding: 36px 30px;
-  border: 1px solid var(--color-border);
+  border: 1.5px solid var(--color-border);
   box-shadow: var(--shadow-sm);
   transition: all var(--transition-normal);
   display: flex;
@@ -922,7 +961,7 @@ p {
   left: 0;
   width: 100%;
   height: 4px;
-  background: linear-gradient(90deg, var(--color-teal) 0%, var(--color-teal-light) 100%);
+  background: linear-gradient(90deg, var(--color-teal-cyan) 0%, var(--color-teal-cyan-light) 100%);
   opacity: 0;
   transition: opacity var(--transition-fast);
 }
@@ -930,7 +969,7 @@ p {
 .why-card:hover {
   transform: translateY(-6px);
   box-shadow: var(--shadow-xl);
-  border-color: rgba(13, 148, 136, 0.3);
+  border-color: var(--color-teal-cyan);
 }
 
 .why-card:hover::before {
@@ -941,8 +980,8 @@ p {
   width: 58px;
   height: 58px;
   border-radius: var(--radius-md);
-  background: var(--color-teal-soft);
-  color: var(--color-teal);
+  background: var(--color-teal-cyan-soft);
+  color: var(--color-teal-cyan);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -951,7 +990,7 @@ p {
 }
 
 .why-card:hover .why-icon-box {
-  background: var(--color-teal);
+  background: var(--color-teal-cyan);
   color: #FFFFFF;
   transform: scale(1.08);
 }
@@ -959,18 +998,18 @@ p {
 .why-card-title {
   font-size: 1.25rem;
   font-weight: 700;
-  color: var(--color-primary-navy);
+  color: var(--color-primary-navy); /* Deep Navy */
   margin-bottom: 12px;
 }
 
 .why-card-text {
   font-size: 0.9375rem;
-  color: var(--color-text-muted);
+  color: var(--color-text-body); /* Slate Grey */
   line-height: 1.6;
 }
 
 /* ==========================================================================
-   Services / Treatments
+   Services / Treatments (Cards Container is Soft Mint Ice)
    ========================================================================== */
 .services-filter-tabs {
   display: flex;
@@ -985,18 +1024,24 @@ p {
   border-radius: var(--radius-full);
   font-size: 0.875rem;
   font-weight: 600;
-  background-color: #FFFFFF;
-  color: var(--color-text-muted);
+  background-color: var(--color-mint-light);
+  color: var(--color-text-body); /* Slate Grey */
   border: 1px solid var(--color-border);
   cursor: pointer;
   transition: all var(--transition-fast);
 }
 
-.filter-tab:hover,
+.filter-tab:hover {
+  border-color: var(--color-teal-cyan);
+  color: var(--color-teal-cyan);
+}
+
+/* Active Tabs are Teal Cyan */
 .filter-tab.active {
-  background-color: var(--color-primary-navy);
+  background: linear-gradient(135deg, var(--color-teal-cyan) 0%, var(--color-teal-cyan-light) 100%);
   color: #FFFFFF;
-  border-color: var(--color-primary-navy);
+  border-color: var(--color-teal-cyan);
+  box-shadow: 0 4px 14px rgba(8, 145, 178, 0.3);
 }
 
 .services-grid {
@@ -1006,10 +1051,10 @@ p {
 }
 
 .service-card {
-  background: #FFFFFF;
+  background: var(--color-mint-card);
   border-radius: var(--radius-lg);
   padding: 30px 24px;
-  border: 1px solid var(--color-border);
+  border: 1.5px solid var(--color-border);
   box-shadow: var(--shadow-sm);
   transition: all var(--transition-normal);
   display: flex;
@@ -1020,7 +1065,7 @@ p {
 .service-card:hover {
   transform: translateY(-5px);
   box-shadow: var(--shadow-lg);
-  border-color: rgba(13, 148, 136, 0.35);
+  border-color: var(--color-teal-cyan);
 }
 
 .service-badge {
@@ -1031,24 +1076,39 @@ p {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  padding: 3px 10px;
+  padding: 4px 12px;
   border-radius: var(--radius-full);
   background-color: var(--color-bg-subtle);
-  color: var(--color-text-muted);
+  color: var(--color-text-muted); /* Slate Grey */
+}
+
+/* Highlighted Services are Teal Cyan */
+.service-card--featured,
+.service-card[data-category="endodontics"] {
+  border: 2px solid var(--color-teal-cyan);
+  box-shadow: 0 8px 28px rgba(8, 145, 178, 0.16);
+  background: #FFFFFF;
+}
+
+.service-card--featured .service-icon-box,
+.service-card[data-category="endodontics"] .service-icon-box {
+  background: var(--color-teal-cyan);
+  color: #FFFFFF;
 }
 
 .service-badge--featured {
-  background-color: var(--color-gold-soft);
-  color: #936B1B;
-  border: 1px solid var(--color-gold-border);
+  background: linear-gradient(135deg, var(--color-teal-cyan) 0%, var(--color-teal-cyan-light) 100%);
+  color: #FFFFFF;
+  border: none;
+  box-shadow: 0 2px 8px rgba(8, 145, 178, 0.3);
 }
 
 .service-icon-box {
   width: 52px;
   height: 52px;
   border-radius: var(--radius-md);
-  background: var(--color-teal-soft);
-  color: var(--color-teal);
+  background: var(--color-teal-cyan-soft);
+  color: var(--color-teal-cyan);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1057,20 +1117,20 @@ p {
 }
 
 .service-card:hover .service-icon-box {
-  background: var(--color-teal);
+  background: var(--color-teal-cyan);
   color: #FFFFFF;
 }
 
 .service-title {
   font-size: 1.1875rem;
   font-weight: 700;
-  color: var(--color-primary-navy);
+  color: var(--color-primary-navy); /* Deep Navy */
   margin-bottom: 10px;
 }
 
 .service-desc {
   font-size: 0.875rem;
-  color: var(--color-text-muted);
+  color: var(--color-text-body); /* Slate Grey */
   line-height: 1.6;
   margin-bottom: 18px;
   flex-grow: 1;
@@ -1087,8 +1147,8 @@ p {
 
 .service-subtag {
   font-size: 0.75rem;
-  background-color: var(--color-bg-alt);
-  color: var(--color-text-muted);
+  background-color: var(--color-bg-alt); /* Soft Mint Ice */
+  color: var(--color-text-muted); /* Slate Grey */
   padding: 3px 9px;
   border-radius: var(--radius-xs);
   font-weight: 500;
@@ -1107,7 +1167,7 @@ p {
   gap: 6px;
   font-size: 0.875rem;
   font-weight: 700;
-  color: var(--color-teal);
+  color: var(--color-teal-cyan); /* Teal Cyan */
   background: none;
   border: none;
   cursor: pointer;
@@ -1117,7 +1177,7 @@ p {
 
 .service-learn-more:hover {
   gap: 10px;
-  color: var(--color-teal-dark);
+  color: var(--color-teal-cyan-dark);
 }
 
 .services-footer-cta {
@@ -1129,7 +1189,7 @@ p {
    Featured Treatment Section: Save Your Natural Smile (Root Canal)
    ========================================================================== */
 .featured-treatment {
-  background: linear-gradient(135deg, #0A1E38 0%, #0F2A4A 100%);
+  background: linear-gradient(135deg, var(--color-primary-navy) 0%, #0F325E 100%);
   color: white;
   padding: 88px 0;
   border-radius: var(--radius-xl);
@@ -1137,6 +1197,7 @@ p {
   overflow: hidden;
   margin: 20px 0;
   box-shadow: var(--shadow-xl);
+  border: 1px solid rgba(8, 145, 178, 0.3);
 }
 
 .featured-treatment::after {
@@ -1147,7 +1208,7 @@ p {
   width: 600px;
   height: 600px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(13, 148, 136, 0.15) 0%, rgba(13, 148, 136, 0) 70%);
+  background: radial-gradient(circle, rgba(6, 182, 212, 0.18) 0%, rgba(6, 182, 212, 0) 70%);
   pointer-events: none;
 }
 
@@ -1170,7 +1231,7 @@ p {
 
 .featured-text {
   font-size: 1.0625rem;
-  color: #CBD5E1;
+  color: #E2E8F0; /* Clean Slate-white */
   line-height: 1.7;
   margin-bottom: 28px;
 }
@@ -1187,11 +1248,11 @@ p {
   align-items: flex-start;
   gap: 12px;
   font-size: 0.9375rem;
-  color: #E2E8F0;
+  color: #F1F5F9;
 }
 
 .featured-benefit-item svg {
-  color: var(--color-teal-light);
+  color: var(--color-teal-cyan-light); /* Luminous Cyan */
   margin-top: 3px;
   flex-shrink: 0;
 }
@@ -1204,7 +1265,7 @@ p {
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: 0 16px 36px rgba(0, 0, 0, 0.35);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .featured-image-card img {
@@ -1251,7 +1312,7 @@ p {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: linear-gradient(180deg, rgba(11, 30, 54, 0) 0%, rgba(11, 30, 54, 0.92) 50%, rgba(11, 30, 54, 0.98) 100%);
+  background: linear-gradient(180deg, rgba(11, 37, 69, 0) 0%, rgba(11, 37, 69, 0.92) 50%, rgba(11, 37, 69, 0.98) 100%);
   padding: 40px 24px 24px 24px;
   color: white;
 }
@@ -1261,12 +1322,13 @@ p {
   font-size: 1.375rem;
   font-weight: 700;
   margin-bottom: 4px;
+  color: #FFFFFF;
 }
 
 .doctor-nameplate-role {
   font-size: 0.8125rem;
-  color: var(--color-gold-light);
-  font-weight: 600;
+  color: var(--color-teal-cyan-light);
+  font-weight: 700;
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
@@ -1275,6 +1337,7 @@ p {
   margin-bottom: 20px;
 }
 
+/* High Authority Accents: Badges */
 .doctor-credentials-container {
   display: flex;
   flex-wrap: wrap;
@@ -1286,32 +1349,33 @@ p {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: var(--color-gold-soft);
-  border: 1px solid var(--color-gold-border);
-  padding: 8px 16px;
+  background: var(--color-primary-navy); /* Deep Navy Authority */
+  border: 1px solid rgba(6, 182, 212, 0.35);
+  padding: 8px 18px;
   border-radius: var(--radius-full);
+  box-shadow: 0 2px 10px rgba(11, 37, 69, 0.12);
 }
 
 .credential-abbr {
   font-weight: 800;
   font-size: 0.875rem;
-  color: #936B1B;
+  color: var(--color-teal-cyan-light); /* Luminous Cyan */
 }
 
 .credential-sep {
-  color: #C5A059;
+  color: #64748B;
   font-size: 0.75rem;
 }
 
 .credential-name {
   font-size: 0.8125rem;
-  color: var(--color-text-main);
+  color: #F1F5F9;
   font-weight: 500;
 }
 
 .doctor-bio {
   font-size: 1.0625rem;
-  color: var(--color-text-main);
+  color: var(--color-text-main); /* Slate Grey */
   line-height: 1.7;
   margin-bottom: 24px;
 }
@@ -1322,9 +1386,12 @@ p {
   gap: 16px;
   margin-bottom: 34px;
   padding: 20px 24px;
-  background-color: var(--color-bg-alt);
+  background-color: var(--color-bg-alt); /* Soft Mint Ice */
   border-radius: var(--radius-md);
-  border-left: 4px solid var(--color-teal);
+  border-left: 4px solid var(--color-teal-cyan); /* Teal Cyan Accent */
+  border-top: 1px solid var(--color-border);
+  border-right: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
 }
 
 .commitment-item {
@@ -1333,16 +1400,16 @@ p {
   gap: 12px;
   font-size: 0.9375rem;
   font-weight: 600;
-  color: var(--color-primary-navy);
+  color: var(--color-primary-navy); /* Deep Navy */
 }
 
 .commitment-item svg {
-  color: var(--color-teal);
+  color: var(--color-teal-cyan);
   flex-shrink: 0;
 }
 
 /* ==========================================================================
-   Patient Journey (4 Steps)
+   Patient Journey (Cards Container is Soft Mint Ice)
    ========================================================================== */
 .journey-timeline-grid {
   display: grid;
@@ -1352,10 +1419,10 @@ p {
 }
 
 .journey-step-card {
-  background: #FFFFFF;
+  background: var(--color-mint-card);
   border-radius: var(--radius-lg);
   padding: 34px 24px;
-  border: 1px solid var(--color-border);
+  border: 1.5px solid var(--color-border);
   box-shadow: var(--shadow-sm);
   position: relative;
   transition: all var(--transition-normal);
@@ -1366,15 +1433,15 @@ p {
 .journey-step-card:hover {
   transform: translateY(-6px);
   box-shadow: var(--shadow-lg);
-  border-color: rgba(13, 148, 136, 0.3);
+  border-color: var(--color-teal-cyan);
 }
 
 .step-number-pill {
   width: 44px;
   height: 44px;
   border-radius: var(--radius-full);
-  background: var(--color-teal-soft);
-  color: var(--color-teal);
+  background: var(--color-primary-navy); /* Deep Navy Authority */
+  color: var(--color-teal-cyan-light);
   font-family: var(--font-heading);
   font-weight: 800;
   font-size: 1rem;
@@ -1382,23 +1449,25 @@ p {
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(11, 37, 69, 0.2);
+  transition: all var(--transition-fast);
 }
 
 .journey-step-card:hover .step-number-pill {
-  background: var(--color-teal);
+  background: var(--color-teal-cyan);
   color: white;
 }
 
 .step-title {
   font-size: 1.1875rem;
   font-weight: 700;
-  color: var(--color-primary-navy);
+  color: var(--color-primary-navy); /* Deep Navy */
   margin-bottom: 12px;
 }
 
 .step-desc {
   font-size: 0.875rem;
-  color: var(--color-text-muted);
+  color: var(--color-text-body); /* Slate Grey */
   line-height: 1.6;
 }
 
@@ -1408,11 +1477,11 @@ p {
 }
 
 /* ==========================================================================
-   Appointment Booking Section (Interactive Form)
+   Appointment Booking Section (Container is Soft Mint Ice)
    ========================================================================== */
 .booking-section {
-  background: radial-gradient(circle at 10% 20%, rgba(13, 148, 136, 0.05) 0%, rgba(255, 255, 255, 0) 50%),
-              var(--color-bg-alt);
+  background: radial-gradient(circle at 10% 20%, rgba(6, 182, 212, 0.08) 0%, rgba(240, 250, 247, 0) 50%),
+              var(--color-bg-alt); /* Soft Mint Ice */
 }
 
 .booking-grid {
@@ -1423,11 +1492,11 @@ p {
 }
 
 .booking-card {
-  background: #FFFFFF;
+  background: var(--color-mint-card);
   border-radius: var(--radius-xl);
   padding: 44px 40px;
   box-shadow: var(--shadow-xl);
-  border: 1px solid var(--color-border);
+  border: 1.5px solid var(--color-border);
 }
 
 .booking-form-grid {
@@ -1448,8 +1517,8 @@ p {
 
 .form-label {
   font-size: 0.875rem;
-  font-weight: 600;
-  color: var(--color-primary-navy);
+  font-weight: 700;
+  color: var(--color-primary-navy); /* Deep Navy */
 }
 
 .form-label .required {
@@ -1469,12 +1538,12 @@ p {
 
 .form-control:focus {
   outline: none;
-  border-color: var(--color-teal);
-  box-shadow: 0 0 0 4px var(--color-teal-glow);
+  border-color: var(--color-teal-cyan);
+  box-shadow: 0 0 0 4px var(--color-teal-cyan-glow);
 }
 
 .form-control::placeholder {
-  color: var(--color-text-light);
+  color: var(--color-text-light); /* Slate Grey Placeholder */
 }
 
 textarea.form-control {
@@ -1483,20 +1552,23 @@ textarea.form-control {
 }
 
 .booking-notice {
-  background-color: var(--color-bg-subtle);
+  background-color: var(--color-bg-alt);
   border-radius: var(--radius-sm);
   padding: 14px 18px;
   font-size: 0.8125rem;
-  color: var(--color-text-muted);
+  color: var(--color-text-body); /* Slate Grey */
   display: flex;
   align-items: flex-start;
   gap: 12px;
   margin-top: 10px;
-  border-left: 3px solid var(--color-gold);
+  border-left: 4px solid var(--color-primary-navy); /* Deep Navy Authority */
+  border-top: 1px solid var(--color-border);
+  border-right: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
 }
 
 .booking-notice svg {
-  color: var(--color-gold);
+  color: var(--color-primary-navy);
   flex-shrink: 0;
   margin-top: 2px;
 }
@@ -1516,7 +1588,7 @@ textarea.form-control {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background: #10B981;
+  background: var(--color-teal-cyan);
   color: white;
   display: flex;
   align-items: center;
@@ -1526,7 +1598,7 @@ textarea.form-control {
 
 .booking-success-title {
   font-size: 1.375rem;
-  color: #065F46;
+  color: var(--color-primary-navy);
   margin-bottom: 8px;
 }
 
@@ -1545,17 +1617,17 @@ textarea.form-control {
 }
 
 .aside-card {
-  background: #FFFFFF;
+  background: var(--color-mint-card);
   border-radius: var(--radius-lg);
   padding: 32px 28px;
-  border: 1px solid var(--color-border);
+  border: 1.5px solid var(--color-border);
   box-shadow: var(--shadow-sm);
 }
 
 .aside-card-title {
   font-size: 1.1875rem;
   font-weight: 700;
-  color: var(--color-primary-navy);
+  color: var(--color-primary-navy); /* Deep Navy */
   margin-bottom: 12px;
   display: flex;
   align-items: center;
@@ -1564,7 +1636,7 @@ textarea.form-control {
 
 .aside-card-text {
   font-size: 0.9375rem;
-  color: var(--color-text-muted);
+  color: var(--color-text-body); /* Slate Grey */
   line-height: 1.6;
   margin-bottom: 20px;
 }
@@ -1585,8 +1657,8 @@ textarea.form-control {
   width: 40px;
   height: 40px;
   border-radius: var(--radius-sm);
-  background-color: var(--color-teal-soft);
-  color: var(--color-teal);
+  background-color: var(--color-teal-cyan-soft);
+  color: var(--color-teal-cyan);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1597,20 +1669,20 @@ textarea.form-control {
   font-size: 0.75rem;
   font-weight: 700;
   text-transform: uppercase;
-  color: var(--color-text-light);
+  color: var(--color-text-muted); /* Slate Grey */
 }
 
 .contact-quick-value {
   font-size: 0.9375rem;
-  font-weight: 600;
-  color: var(--color-primary-navy);
+  font-weight: 700;
+  color: var(--color-primary-navy); /* Deep Navy */
 }
 
 /* ==========================================================================
    WhatsApp CTA Banner
    ========================================================================== */
 .whatsapp-banner {
-  background: linear-gradient(135deg, #075E54 0%, #128C7E 100%);
+  background: linear-gradient(135deg, #065F46 0%, #047857 50%, var(--color-teal-cyan-dark) 100%);
   color: white;
   border-radius: var(--radius-xl);
   padding: 56px 48px;
@@ -1724,10 +1796,10 @@ textarea.form-control {
 }
 
 .comparison-card {
-  background: #FFFFFF;
+  background: var(--color-mint-card);
   border-radius: var(--radius-lg);
   overflow: hidden;
-  border: 1px solid var(--color-border);
+  border: 1.5px solid var(--color-border);
   box-shadow: var(--shadow-sm);
   transition: all var(--transition-normal);
 }
@@ -1735,6 +1807,7 @@ textarea.form-control {
 .comparison-card:hover {
   box-shadow: var(--shadow-lg);
   transform: translateY(-4px);
+  border-color: var(--color-teal-cyan);
 }
 
 /* Interactive Before/After Split Container */
@@ -1745,7 +1818,7 @@ textarea.form-control {
   overflow: hidden;
   user-select: none;
   cursor: ew-resize;
-  background-color: #E2E8F0;
+  background-color: var(--color-bg-subtle);
 }
 
 .ba-image {
@@ -1792,13 +1865,13 @@ textarea.form-control {
   height: 36px;
   border-radius: 50%;
   background: white;
-  border: 2px solid var(--color-teal);
+  border: 2px solid var(--color-teal-cyan);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 4;
-  color: var(--color-teal);
+  color: var(--color-teal-cyan);
   pointer-events: none;
 }
 
@@ -1812,7 +1885,7 @@ textarea.form-control {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  background: rgba(11, 30, 54, 0.75);
+  background: rgba(11, 37, 69, 0.85); /* Deep Navy Badge */
   color: white;
   backdrop-filter: blur(4px);
   pointer-events: none;
@@ -1836,32 +1909,32 @@ textarea.form-control {
   font-size: 0.75rem;
   font-weight: 700;
   text-transform: uppercase;
-  color: var(--color-teal);
+  color: var(--color-teal-cyan);
   margin-bottom: 4px;
 }
 
 .comparison-title {
   font-size: 1.0625rem;
   font-weight: 700;
-  color: var(--color-primary-navy);
+  color: var(--color-primary-navy); /* Deep Navy */
   margin-bottom: 6px;
 }
 
 .comparison-desc {
   font-size: 0.8125rem;
-  color: var(--color-text-muted);
+  color: var(--color-text-body); /* Slate Grey */
 }
 
 .transformations-disclaimer {
   text-align: center;
   font-size: 0.8125rem;
-  color: var(--color-text-light);
+  color: var(--color-text-muted); /* Slate Grey */
   font-style: italic;
   margin-top: 24px;
 }
 
 /* ==========================================================================
-   Clinic Gallery Section
+   Clinic Gallery Section (Cards Container is Soft Mint Ice)
    ========================================================================== */
 .gallery-filter-tabs {
   display: flex;
@@ -1885,6 +1958,7 @@ textarea.form-control {
   cursor: pointer;
   background-color: var(--color-bg-subtle);
   aspect-ratio: 4 / 3;
+  border: 1px solid var(--color-border);
 }
 
 .gallery-item img {
@@ -1897,7 +1971,7 @@ textarea.form-control {
 .gallery-item-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(11, 30, 54, 0.1) 0%, rgba(11, 30, 54, 0.85) 100%);
+  background: linear-gradient(180deg, rgba(11, 37, 69, 0.1) 0%, rgba(11, 37, 69, 0.88) 100%);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -1923,14 +1997,14 @@ textarea.form-control {
 
 .gallery-item-tag {
   font-size: 0.75rem;
-  color: var(--color-teal-light);
+  color: var(--color-teal-cyan-light);
 }
 
 /* Lightbox Modal */
 .lightbox {
   position: fixed;
   inset: 0;
-  background-color: rgba(7, 19, 36, 0.94);
+  background-color: rgba(7, 25, 48, 0.95);
   backdrop-filter: blur(12px);
   z-index: 9999;
   display: none;
@@ -2005,7 +2079,7 @@ textarea.form-control {
 .lightbox-next { right: -70px; }
 
 /* ==========================================================================
-   Patient Testimonials Section
+   Patient Testimonials Section (Cards Container is Soft Mint Ice)
    ========================================================================== */
 .testimonials-wrapper {
   position: relative;
@@ -2020,10 +2094,10 @@ textarea.form-control {
 }
 
 .testimonial-card {
-  background: #FFFFFF;
+  background: var(--color-mint-card);
   border-radius: var(--radius-lg);
   padding: 32px 26px;
-  border: 1px solid var(--color-border);
+  border: 1.5px solid var(--color-border);
   box-shadow: var(--shadow-sm);
   display: flex;
   flex-direction: column;
@@ -2033,6 +2107,7 @@ textarea.form-control {
 .testimonial-card:hover {
   transform: translateY(-5px);
   box-shadow: var(--shadow-md);
+  border-color: var(--color-teal-cyan);
 }
 
 .testimonial-rating {
@@ -2042,9 +2117,10 @@ textarea.form-control {
   margin-bottom: 16px;
 }
 
+/* Quotes are Slate Grey */
 .testimonial-quote {
   font-size: 0.9375rem;
-  color: var(--color-text-main);
+  color: var(--color-text-main); /* Slate Grey */
   line-height: 1.6;
   margin-bottom: 24px;
   flex-grow: 1;
@@ -2062,8 +2138,8 @@ textarea.form-control {
   width: 42px;
   height: 42px;
   border-radius: 50%;
-  background: var(--color-teal-soft);
-  color: var(--color-teal-dark);
+  background: var(--color-teal-cyan-soft);
+  color: var(--color-teal-cyan-dark);
   font-weight: 700;
   display: flex;
   align-items: center;
@@ -2074,12 +2150,12 @@ textarea.form-control {
 .patient-name {
   font-weight: 700;
   font-size: 0.9375rem;
-  color: var(--color-primary-navy);
+  color: var(--color-primary-navy); /* Deep Navy */
 }
 
 .patient-treatment-type {
   font-size: 0.75rem;
-  color: var(--color-text-light);
+  color: var(--color-text-muted); /* Slate Grey */
 }
 
 .testimonials-footer {
@@ -2093,7 +2169,7 @@ textarea.form-control {
 
 .testimonials-placeholder-notice {
   font-size: 0.8125rem;
-  color: var(--color-text-light);
+  color: var(--color-text-muted); /* Slate Grey */
   font-style: italic;
 }
 
@@ -2112,16 +2188,17 @@ textarea.form-control {
 }
 
 .accordion-item {
-  background: #FFFFFF;
+  background: var(--color-mint-card);
   border-radius: var(--radius-md);
-  border: 1px solid var(--color-border);
+  border: 1.5px solid var(--color-border);
   overflow: hidden;
-  transition: border-color var(--transition-fast);
+  transition: all var(--transition-fast);
 }
 
+/* Active accordion is Teal Cyan */
 .accordion-item.active {
-  border-color: var(--color-teal);
-  box-shadow: 0 4px 16px rgba(13, 148, 136, 0.08);
+  border-color: var(--color-teal-cyan);
+  box-shadow: 0 4px 18px rgba(8, 145, 178, 0.12);
 }
 
 .accordion-trigger {
@@ -2137,12 +2214,12 @@ textarea.form-control {
   cursor: pointer;
   font-size: 1.0625rem;
   font-weight: 700;
-  color: var(--color-primary-navy);
+  color: var(--color-primary-navy); /* Deep Navy */
   transition: color var(--transition-fast);
 }
 
 .accordion-trigger:hover {
-  color: var(--color-teal);
+  color: var(--color-teal-cyan);
 }
 
 .accordion-icon {
@@ -2159,8 +2236,8 @@ textarea.form-control {
 
 .accordion-item.active .accordion-icon {
   transform: rotate(180deg);
-  background-color: var(--color-teal-soft);
-  color: var(--color-teal);
+  background-color: var(--color-teal-cyan-soft);
+  color: var(--color-teal-cyan);
 }
 
 .accordion-body {
@@ -2172,7 +2249,7 @@ textarea.form-control {
 
 .accordion-content {
   padding: 0 24px 22px 24px;
-  color: var(--color-text-muted);
+  color: var(--color-text-body); /* Slate Grey */
   font-size: 0.9375rem;
   line-height: 1.65;
 }
@@ -2188,10 +2265,10 @@ textarea.form-control {
 }
 
 .location-card {
-  background: #FFFFFF;
+  background: var(--color-mint-card);
   border-radius: var(--radius-xl);
   padding: 44px 36px;
-  border: 1px solid var(--color-border);
+  border: 1.5px solid var(--color-border);
   box-shadow: var(--shadow-sm);
   display: flex;
   flex-direction: column;
@@ -2215,8 +2292,8 @@ textarea.form-control {
   width: 44px;
   height: 44px;
   border-radius: var(--radius-md);
-  background: var(--color-teal-soft);
-  color: var(--color-teal);
+  background: var(--color-teal-cyan-soft);
+  color: var(--color-teal-cyan);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2225,13 +2302,13 @@ textarea.form-control {
 
 .loc-detail-content h4 {
   font-size: 0.9375rem;
-  color: var(--color-primary-navy);
+  color: var(--color-primary-navy); /* Deep Navy */
   margin-bottom: 4px;
 }
 
 .loc-detail-content p {
   font-size: 0.875rem;
-  color: var(--color-text-muted);
+  color: var(--color-text-body); /* Slate Grey */
 }
 
 .location-actions-row {
@@ -2244,7 +2321,7 @@ textarea.form-control {
   border-radius: var(--radius-xl);
   overflow: hidden;
   box-shadow: var(--shadow-md);
-  border: 1px solid var(--color-border);
+  border: 1.5px solid var(--color-border);
   min-height: 440px;
   height: 100%;
 }
@@ -2257,7 +2334,7 @@ textarea.form-control {
 }
 
 /* ==========================================================================
-   Contact Section
+   Contact Section (Cards Container is Soft Mint Ice)
    ========================================================================== */
 .contact-grid {
   display: grid;
@@ -2272,10 +2349,10 @@ textarea.form-control {
 }
 
 .contact-info-card {
-  background: #FFFFFF;
+  background: var(--color-mint-card);
   border-radius: var(--radius-lg);
   padding: 26px 22px;
-  border: 1px solid var(--color-border);
+  border: 1.5px solid var(--color-border);
   box-shadow: var(--shadow-sm);
   display: flex;
   flex-direction: column;
@@ -2286,8 +2363,8 @@ textarea.form-control {
   width: 42px;
   height: 42px;
   border-radius: var(--radius-sm);
-  background-color: var(--color-teal-soft);
-  color: var(--color-teal);
+  background-color: var(--color-teal-cyan-soft);
+  color: var(--color-teal-cyan);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2298,20 +2375,20 @@ textarea.form-control {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: var(--color-text-light);
+  color: var(--color-text-muted); /* Slate Grey */
 }
 
 .contact-info-val {
   font-size: 0.9375rem;
   font-weight: 700;
-  color: var(--color-primary-navy);
+  color: var(--color-primary-navy); /* Deep Navy */
 }
 
 .contact-form-card {
-  background: #FFFFFF;
+  background: var(--color-mint-card);
   border-radius: var(--radius-xl);
   padding: 40px;
-  border: 1px solid var(--color-border);
+  border: 1.5px solid var(--color-border);
   box-shadow: var(--shadow-lg);
 }
 
@@ -2319,10 +2396,10 @@ textarea.form-control {
    Footer
    ========================================================================== */
 .footer {
-  background-color: var(--color-primary-deep);
-  color: #94A3B8;
+  background-color: var(--color-navy-dark);
+  color: var(--color-text-light);
   padding: 80px 0 32px 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid rgba(8, 145, 178, 0.2);
 }
 
 .footer-grid {
@@ -2340,7 +2417,7 @@ textarea.form-control {
 }
 
 .footer-brand-p {
-  color: #94A3B8;
+  color: #94A3B8; /* Slate Grey */
   font-size: 0.9375rem;
   line-height: 1.6;
   margin: 18px 0 24px 0;
@@ -2353,13 +2430,13 @@ textarea.form-control {
 }
 
 .footer-link {
-  color: #94A3B8;
+  color: #94A3B8; /* Slate Grey */
   font-size: 0.9375rem;
   transition: color var(--transition-fast);
 }
 
 .footer-link:hover {
-  color: var(--color-teal-light);
+  color: var(--color-teal-cyan-light);
 }
 
 .footer-contact-item {
@@ -2368,11 +2445,11 @@ textarea.form-control {
   gap: 12px;
   margin-bottom: 14px;
   font-size: 0.9375rem;
-  color: #CBD5E1;
+  color: #E2E8F0;
 }
 
 .footer-contact-item svg {
-  color: var(--color-teal-light);
+  color: var(--color-teal-cyan-light);
   margin-top: 3px;
   flex-shrink: 0;
 }
@@ -2384,7 +2461,7 @@ textarea.form-control {
   align-items: center;
   justify-content: space-between;
   font-size: 0.875rem;
-  color: #64748B;
+  color: #64748B; /* Slate Grey */
 }
 
 .footer-legal-links {
@@ -2395,18 +2472,18 @@ textarea.form-control {
 .footer-legal-links button {
   background: none;
   border: none;
-  color: #64748B;
+  color: #94A3B8;
   cursor: pointer;
   font-size: 0.875rem;
   padding: 0;
 }
 
 .footer-legal-links button:hover {
-  color: #CBD5E1;
+  color: #FFFFFF;
 }
 
 /* ==========================================================================
-   Floating Action Buttons
+   Floating Action Buttons & Mobile Bottom Bar
    ========================================================================== */
 .floating-actions {
   position: fixed;
@@ -2444,13 +2521,13 @@ textarea.form-control {
 }
 
 .fab-book {
-  background-color: var(--color-teal);
+  background: linear-gradient(135deg, var(--color-teal-cyan) 0%, var(--color-teal-cyan-light) 100%);
 }
 
 .fab-tooltip {
   position: absolute;
   right: 64px;
-  background: rgba(11, 30, 54, 0.9);
+  background: rgba(11, 37, 69, 0.92);
   color: white;
   padding: 4px 10px;
   border-radius: var(--radius-xs);
@@ -2466,19 +2543,18 @@ textarea.form-control {
   opacity: 1;
 }
 
-/* Mobile Quick Bar at bottom */
 .mobile-bottom-bar {
   display: none;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  background: rgba(255, 255, 255, 0.98);
+  background: rgba(235, 248, 244, 0.98); /* Soft Mint Ice Glass */
   backdrop-filter: blur(12px);
   border-top: 1px solid var(--color-border);
   padding: 10px 16px;
   z-index: 998;
-  box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 -4px 16px rgba(11, 37, 69, 0.08);
 }
 
 .mobile-bottom-grid {
@@ -2493,7 +2569,7 @@ textarea.form-control {
 .modal-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(7, 19, 36, 0.7);
+  background: rgba(7, 25, 48, 0.75);
   backdrop-filter: blur(8px);
   z-index: 9999;
   display: none;
@@ -2507,7 +2583,7 @@ textarea.form-control {
 }
 
 .modal-card {
-  background: #FFFFFF;
+  background: var(--color-mint-card);
   border-radius: var(--radius-xl);
   max-width: 640px;
   width: 100%;
@@ -2516,6 +2592,7 @@ textarea.form-control {
   box-shadow: var(--shadow-xl);
   position: relative;
   padding: 40px;
+  border: 1.5px solid var(--color-border);
   animation: modalScaleUp 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -2537,28 +2614,28 @@ textarea.form-control {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  color: var(--color-text-main);
+  color: var(--color-primary-navy);
   transition: all var(--transition-fast);
 }
 
 .modal-close-btn:hover {
-  background: #E2E8F0;
+  background: var(--color-border);
 }
 
 .modal-title {
   font-size: 1.5rem;
-  color: var(--color-primary-navy);
+  color: var(--color-primary-navy); /* Deep Navy */
   margin-bottom: 12px;
 }
 
 .modal-body {
-  color: var(--color-text-muted);
+  color: var(--color-text-body); /* Slate Grey */
   font-size: 0.9375rem;
   line-height: 1.7;
 }
 
 .modal-body h4 {
-  color: var(--color-primary-navy);
+  color: var(--color-primary-navy); /* Deep Navy */
   margin: 18px 0 8px 0;
 }
 
@@ -2684,7 +2761,7 @@ textarea.form-control {
     display: none;
   }
   .floating-actions {
-    display: none; /* Replaced by bottom bar on mobile */
+    display: none;
   }
   .mobile-bottom-bar {
     display: block;
